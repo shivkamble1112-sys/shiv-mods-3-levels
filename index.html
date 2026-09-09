@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WINGO 1-MIN LIVE RESULT</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-color: #0b0e14;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 15px;
+        }
+        .box {
+            border: 2px solid #00ffcc;
+            padding: 25px;
+            width: 100%;
+            max-width: 360px;
+            background: #161b22;
+            text-align: center;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.2);
+        }
+        h3 {
+            color: #00ffcc;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+        }
+        .info-row {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #aaaaaa;
+        }
+        .info-row span {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .timer {
+            font-size: 2.2rem;
+            color: #ffcc00;
+            margin: 20px 0;
+            font-weight: bold;
+            font-family: monospace;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background: #333333;
+            margin: 15px 0;
+        }
+        .result {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-top: 15px;
+            color: #00ffcc;
+        }
+        .GREEN { color: #28a745; }
+        .RED { color: #dc3545; }
+        .VIOLET { color: #8a2be2; }
+    </style>
+</head>
+<body>
+
+    <div class="box">
+        <h3>WINGO 1-MIN RESULT</h3>
+        <div class="info-row">Period: <span id="period-id">--</span></div>
+        <div class="timer" id="timer">00:60</div>
+        <hr>
+        <div class="info-row">Latest Result:</div>
+        <div class="result" id="result-display">WAITING...</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+  </html>
+  
